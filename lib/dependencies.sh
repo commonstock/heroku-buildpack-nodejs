@@ -286,7 +286,5 @@ npm_prune_devdependencies() {
 build_web_app() {
   local build_dir=${1:-}
   cd "$build_dir"
-
-  echo "Building web app"
   monitor "npm-build-web-app" npm run build 2>&1
 }
